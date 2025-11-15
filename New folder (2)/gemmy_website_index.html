@@ -1,0 +1,235 @@
+<!--
+  Gemmy International Travels & Tours Consultant
+  Single-file demo website (index.html) for GitHub deployment.
+
+  INSTRUCTIONS:
+  1) Save this file as `index.html` in your project root.
+  2) Create a folder named `images/` in the same project root and add these images:
+     - images/logo.jpg            (use the logo you uploaded: /mnt/data/11122336.jpg -> rename to logo.jpg)
+     - images/saudi-1.jpg         (photo of Saudi skyline / city)
+     - images/saudi-2.jpg         (photo of Riyadh / infrastructure)
+     - images/business-1.jpg      (industry / office / meeting photo)
+     - images/business-2.jpg
+     - images/business-3.jpg
+  3) Commit and push to a GitHub repository. GitHub Pages will automatically serve index.html.
+  4) If you want me to add real image URLs I can insert those — tell me if you want unsplash links.
+
+  Note: Replace placeholder images with your own photos for licensing.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gemmy International Travels & Tours Consultant — Start Your Company in Saudi Arabia</title>
+  <meta name="description" content="Company formation services in Saudi Arabia. Business registration, licenses, visas and more. Contact: WhatsApp 0333-7661292">
+  <style>
+    :root{--accent:#3b2a7a;--accent-2:#ff8a00;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#222}
+    header{background:linear-gradient(135deg,var(--accent) 0%, #4a3799 100%); color:#fff; padding:28px 18px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .brand{display:flex;align-items:center;gap:16px}
+    .brand img{width:96px;height:96px;object-fit:contain;border-radius:10px;background:#fff;padding:8px}
+    .brand h1{font-size:20px;margin:0;line-height:1}
+    .brand p{margin:2px 0 0;font-size:13px;opacity:.95}
+
+    nav{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.06)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:18px;align-items:center;padding:28px 0}
+    .hero .lead{background:#fff;padding:22px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+    .hero h2{margin:0 0 8px;color:var(--accent)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(59,42,122,.06)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+    section{padding:28px 0}
+    h3{margin:0 0 12px}
+    p.lead-small{color:var(--muted);margin:0 0 16px}
+
+    .services{display:flex;gap:12px;flex-wrap:wrap}
+    .service{flex:1 1 260px;background:#fff;border-radius:12px;padding:14px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+    .service h4{margin:0 0 8px;color:var(--accent)}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    footer{background:#0f1724;color:#dbeafe;padding:20px;border-top:1px solid rgba(255,255,255,.04)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:480px){
+      .gallery img{height:120px}
+      .brand img{width:72px;height:72px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Gemmy International logo">
+        <div>
+          <h1>Gemmy International Travels &amp; Tours Consultant</h1>
+          <p class="muted">Start Your Company in Saudi Arabia — Company formation, licenses, visas &amp; support</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#saudi">Saudi Info</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="lead card">
+        <h2>Start Your Company in Saudi Arabia</h2>
+        <p class="lead-small">Full company formation services — LLC, branch, foreign investment licenses, commercial registration, visas, bank introductions and ongoing compliance support.</p>
+        <div style="margin-top:12px">
+          <a class="btn btn-primary" href="#contact">Get Started</a>
+          <a class="btn btn-ghost" href="#services" style="margin-left:8px">See Services</a>
+        </div>
+
+        <hr style="margin:18px 0;border:none;border-top:1px solid #eee">
+        <div class="grid-3">
+          <div class="card">
+            <strong>CEO</strong>
+            <p class="muted">Syed Wajid Shah</p>
+          </div>
+          <div class="card">
+            <strong>WhatsApp</strong>
+            <p class="muted">+92 333-7661292</p>
+          </div>
+          <div class="card">
+            <strong>Office</strong>
+            <p class="muted">+92 51-2614044</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Quick overview</h3>
+          <p class="muted">We manage the whole company set-up process — document preparation, trade license application, investor visas, notary, translation, local sponsorship arrangements (if required), and bank account opening assistance.</p>
+          <div style="margin-top:12px">
+            <img src="images/saudi-1.jpg" alt="Saudi city" style="width:100%;height:220px;object-fit:cover;border-radius:8px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>About Saudi Company Formation</h3>
+      <p class="lead-small">Saudi Arabia has simplified foreign investment rules and offers multiple business structures. Popular options include Limited Liability Company (LLC), branch office, representative office and joint ventures. Key steps generally are: name reservation, MOA/articles, CR registration, obtaining licenses and visas, and registering with tax and labor authorities.</p>
+
+      <div class="services" id="services">
+        <div class="service">
+          <h4>Company Registration</h4>
+          <p class="muted">We handle CR, chamber registration, and licensing for commercial, service and industrial activities.</p>
+        </div>
+        <div class="service">
+          <h4>Investment Licenses</h4>
+          <p class="muted">Assistance with SVC and sector specific approvals, including SAGIA/Investment Authority processes if required.</p>
+        </div>
+        <div class="service">
+          <h4>Visas &amp; Immigration</h4>
+          <p class="muted">Investor, work and family visas — document processing and follow-up.</p>
+        </div>
+        <div class="service">
+          <h4>Local Sponsorship</h4>
+          <p class="muted">Guidance on commercial agents and nominee arrangements and safe contracts.</p>
+        </div>
+        <div class="service">
+          <h4>Banking Support</h4>
+          <p class="muted">Introductions to local banks and help with required paperwork.</p>
+        </div>
+        <div class="service">
+          <h4>Ongoing Compliance</h4>
+          <p class="muted">Accounting, ZATCA VAT registration support, and renewals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="saudi">
+      <h3>Photos &amp; Business Types</h3>
+      <p class="lead-small">Below are sample photos. Replace with your own images before publishing. Business types we commonly help with include: Trading, Import/Export, IT &amp; Software, Consultancy, Manufacturing, F&B and Logistics.</p>
+
+      <div class="gallery">
+        <img src="images/saudi-1.jpg" alt="Saudi skyline">
+        <img src="images/saudi-2.jpg" alt="Riyadh business district">
+        <img src="images/business-1.jpg" alt="business meeting">
+        <img src="images/business-2.jpg" alt="office workspace">
+        <img src="images/business-3.jpg" alt="logistics and transport">
+        <img src="images/logo.jpg" alt="logo small">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact &amp; Office</h3>
+      <div class="card contact-grid">
+        <div>
+          <strong>Gemmy International Travels &amp; Tours Consultant</strong>
+          <p class="muted">Office Flat No. F-101, 1st Floor, Tech Tower, Lehtrar Road near Khanna Pul, Islamabad</p>
+          <p style="margin-top:10px"><strong>WhatsApp:</strong> <a href="https://wa.me/923337661292" target="_blank">+92 333-7661292</a></p>
+          <p><strong>Phone:</strong> +92 51-2614044</p>
+          <p><strong>CEO:</strong> Syed Wajid Shah</p>
+        </div>
+        <div>
+          <form id="contactForm" class="card" style="background:linear-gradient(180deg,#fff,#fafafa);">
+            <label for="name">Your name</label><br>
+            <input id="name" name="name" placeholder="Full name" required style="width:100%;padding:8px;margin:8px 0;border-radius:8px;border:1px solid #ddd"><br>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" placeholder="you@example.com" required style="width:100%;padding:8px;margin:8px 0;border-radius:8px;border:1px solid #ddd"><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your business plan..." style="width:100%;padding:8px;margin:8px 0;border-radius:8px;border:1px solid #ddd"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <small>© <span id="year"></span> Gemmy International Travels &amp; Tours Consultant — All rights reserved.</small>
+      </div>
+      <div>
+        <small>Designed for GitHub Pages • Put your images in <code>images/</code> folder</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple demo contact handler (client-side only) — replace with server endpoint when available.
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      if(!name || !email){ alert('Please provide name and email.'); return; }
+      alert('Thank you, ' + name + '! We received your message and will contact you on WhatsApp or the phone number you provide.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
